@@ -9,6 +9,14 @@
     "{{ .Virtenv }}/empty-dir": "",
     "{{ .Virtenv }}/some-file": "files/some-file.txt",
     "{{ .DevboxDir }}/some-file.txt": "files/some-file.txt",
+
+    // this is a comment prior to process-compose
     "{{ .Virtenv }}/process-compose.yaml": "files/process-compose.yaml"
+  },
+  "shell": {
+    "init_hook": [
+      // this is a comment in the init hook
+      "echo \"hello from savil devbox remote plugin with comments\"",
+    ]
   }
 }
